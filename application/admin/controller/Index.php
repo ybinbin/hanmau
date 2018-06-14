@@ -14,6 +14,10 @@ class Index extends Controller
      */
     public function index()
     {
+
+        $this->view->metaTitle = 'logo管理';
+        $this->view->action = 'index';
+
         return $this->view->fetch('index');
     }
 
